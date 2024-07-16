@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*=========================================== COLOR AND FONT SIZE ROOTS ========================================== */
+:root {
+    --black: #000;
+    --white: #fff;
+    --dark-grey: #8497B4;
+    --light-white: #86A1F0;
+    --blue: #1643C3;
+    --off-grey: #D4E3F9;
+    --light-blue: #4878FF;
+    --grey: #CFD4E4;
+
+    --font-sm: 14px;
+    --font-base: 16px;
+    --font-md: 18px;
+    --font-2md: 22px;
+    --font-lg: 24px;
+    --font-1lg: 38px;
+    --font-xl: 28px;
+    --font-2xl: 28px;
+    --font-3xl: 46px;
+}
+
+/*=================================================  COLORS =========================================== */
+
+.text_black {
+    color: var(--black);
+}
+
+.text_blue {
+    color: var(--blue)
+}
+
+.text_light_blue {
+    color: var(--light-blue)
+}
+
+.text_white {
+    color: var(--white);
+}
+
+.text_grey {
+    color: var(--grey);
+}
+
+.bg_black {
+    background-color: var(--black);
+}
+
+.bg_primary {
+    background-color: var(--primary);
+}
+
+.bg_raisin_black {
+    background-color: var(--raisin-black);
+}
+
+/*=========================================== FONT-SIZES ========================================== */
+
+.text_sm {
+    font-size: var(--font-sm);
+}
+
+.text_base {
+    font-size: var(--font-base);
+}
+
+.text_md {
+    font-size: var(--font-md);
+}
+
+.text_2md {
+    font-size: var(--font-2md);
+}
+
+.text_lg {
+    font-size: var(--font-lg);
+}
+
+.text_1lg {
+    font-size: var(--font-1lg);
+}
+
+.text_xl {
+    font-size: var(--font-xl);
+}
+
+.text_2xl {
+    font-size: var(--font-2xl);
+}
+
+.text_3xl {
+    font-size: var(--font-3xl);
+}
+
+/*===========================================  LINE HEIGHT ========================================== */
+
+.leading_112 {
+    line-height: 112%;
+}
+
+.leading_120 {
+    line-height: 120%;
+}
+
+.leading_150 {
+    line-height: 150%;
+}
+
+.leading_160 {
+    line-height: 160%;
+}
+
+/*=========================================== OPACITY CLASSES ========================================== */
+.opacity_80 {
+    opacity: 0.8;
+}
+
+/*=========================================== COMMON CLASSES ========================================== */
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.pointer_event_none {
+    pointer-events: none;
+}
+
+.ff_raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+@font-face {
+    font-family: 'Neue Machina', sans-serif;
+    src: url("../fonts/NeueMachina-Regular.otf");
+}
+
+.ff_nueue {
+    font-family: 'Neue Machina', sans-serif;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.hero_top_spacing {
+    padding-top: 42px;
+}
+
+/* ==============================================BUTTONS============================================== */
+.nav_button {
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 8px;
+    transition: 0.3s ease;
+    width: 136px;
+    height: 43px;
+}
+
+/*=========================================== MEDIA QURIES ========================================== */
+
+@media (min-width: 991.98px) {
+    .hero_top_spacing {
+        padding-top: 162px;
+    }
+
+    .hero_heading {
+        max-width: 342px;
+    }
+
+    .hero_image {
+        margin-top: -60px;
+        max-height: 887px;
+        max-width: 631px;
+    }
+
+    :root {
+        --font-sm: 14px;
+        --font-base: 16px;
+        --font-md: 18px;
+        --font-lg: 24px;
+        --font-xl: 40px;
+        --font-2xl: 40px;
+        --font-3xl: 85px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    :root {
+        --font-sm: 14px;
+        --font-base: 16px;
+        --font-md: 18px;
+        --font-lg: 24px;
+        --font-xl: 46px;
+        --font-2xl: 40px;
+        --font-3xl: 72px;
+    }
+}
+
+@media (min-width: 575.98px) {
+    :root {
+        --font-md: 16px;
+        --font-lg: 32px;
+    }
+
+    .hero_image {
+        margin-top: 70px;
+    }
+
+    .hero_top_spacing {
+        padding-top: 132px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1164px !important;
+    }
+
+    .nav_button {
+        border: 1px solid var(--blue);
+        color: var(--blue);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+.header_layer {
+    background-image: url("../images/header_bg_layer.png");
+}
+
+.amplify_bg {
+    background-image: url("../images/amilify_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_stratergy {
+    background-image: url("../images/bg_stratergy.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ampilfy_spacing {
+    padding-top: 366px;
+    padding-bottom: 324px;
+}
+
+.stratergy_inner_line {
+    opacity: 20%;
+    height: 3px;
+    border-radius: 18px;
+}
+
+/* =================================================WIDTHS================================================= */
+.hero_heading {
+    max-width: 100%;
+}
+
+.amplify_para {
+    max-width: 554px;
+}
+
+.para_stratergy {
+    max-width: 819px;
+}
+
+.max_w_968 {
+    max-width: 968px;
+}
+
+/*===========================================ELLIPSE POSITIONS=========================================== */
+.header_ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.clouds_layer {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    z-index: 2;
+}
+
+.stratergy_cards {
+    background: linear-gradient(124.24deg, rgba(19, 245, 255, 0.25) 7.19%, rgba(0, 66, 255, 0) 93.2%);
+    box-shadow: 0px 4px 41px 0px #4281EE70;
+    border: 1px solid;
+    border-radius: 12px;
+    padding-top: 17px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 30px;
+    max-width: 335px;
+    margin-bottom: 48px;
+    border-image-source: linear-gradient(214.55deg, #1643C3 2.85%, #9AB3F9 116.27%);
+}
+
+.innovation_tag {
+    background: #6C67F133;
+    width: 89px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+/* ================================================IMAGES================================================ */
+.hero_image {
+    margin-top: 30px;
+    max-height: 600px;
+    max-width: 531px;
+    object-fit: contain;
+}
+
+/*===========================================RESPONSIVE NAVBAR========================================== */
+
+.hamburger_line_1 {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 30px;
+    height: 5px;
+    background: var(--white);
+    transition: 0.4s;
+}
+
+.hamburger_line_2 {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 30px;
+    height: 5px;
+    background: var(--white);
+    transition: 0.4s;
+}
+
+.hamburger_line_3 {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    width: 30px;
+    margin-left: auto;
+    height: 5px;
+    background: var(--white);
+    transition: 0.4s;
+}
+
+.cross_line_1 {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 5px;
+    transform: rotate(45deg);
+    transition: 0.4s;
+    background: var(--white) !important;
+}
+
+.cross_line_2 {
+    position: relative;
+    z-index: 20;
+    display: none;
+    width: 30px;
+    height: 5px;
+    background: var(--white) !important;
+    transition: 0.4s;
+}
+
+.cross_line_3 {
+    position: relative;
+    z-index: 20;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: 30px;
+    height: 5px;
+    transform: rotate(-45deg);
+    transition: 0.4s;
+    background: var(--white) !important;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5px;
+    transition: all 3s linear;
+}
+
+@media (max-width: 991.9px) {
+    .mobile_view {
+        position: fixed;
+        width: 100% !important;
+        top: 0;
+        left: -100%;
+        background: var(--light-blue);
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        height: 100%;
+        transition: all 0.4s ease-in-out;
+        z-index: 11;
+    }
+
+    .show {
+        left: 0 !important;
+    }
+
+    .hamburger_line_1,
+    .hamburger_line_2,
+    .hamburger_line_3 {
+        background-color: var(--white);
+    }
+}
+
+/* slider */
+.slick-track {
+    width: 100% !important;
+    display: flex !important;
+}
+
+.slick-slide {
+    width: unset !important;
+}
