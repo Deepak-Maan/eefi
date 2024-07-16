@@ -249,11 +249,11 @@ p {
 }
 
 .header_layer {
-    background-image: url("../images/header_bg_layer.png");
+    background-image: url("../images/header_bg_layer.webp");
 }
 
 .amplify_bg {
-    background-image: url("../images/amilify_bg.png");
+    background-image: url("../images/amilify_bg.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,7 +264,7 @@ p {
 }
 
 .bg_stratergy {
-    background-image: url("../images/bg_stratergy.png");
+    background-image: url("../images/bg_stratergy.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
