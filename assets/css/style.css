@@ -131,12 +131,30 @@
 }
 
 @font-face {
-    font-family: 'Neue Machina', sans-serif;
-    src: url("../fonts/NeueMachina-Regular.otf");
+    font-family: 'neuemachinalight';
+    src: url('../fonts/NeueMachina-Light.otf');
 }
 
-.ff_nueue {
-    font-family: 'Neue Machina', sans-serif;
+@font-face {
+    font-family: 'neuemachinaregular';
+    src: url('../fonts/NeueMachina-Regular.otf');
+}
+
+@font-face {
+    font-family: 'neuemachinaultrabold';
+    src: url('../fonts/NeueMachina-Ultrabold.otf');
+}
+
+.font-neuelight {
+    font-family: 'neuemachinalight';
+}
+
+.font-neueregular {
+    font-family: 'neuemachinaregular';
+}
+
+.font-neueubold {
+    font-family: 'neuemachinaultrabold';
 }
 
 p {
@@ -184,8 +202,8 @@ p {
         --font-base: 16px;
         --font-md: 18px;
         --font-lg: 24px;
-        --font-xl: 40px;
-        --font-2xl: 40px;
+        --font-xl: 46px;
+        --font-2xl: 52px;
         --font-3xl: 85px;
     }
 }
@@ -342,6 +360,8 @@ p {
     object-fit: contain;
 }
 
+
+
 /*===========================================RESPONSIVE NAVBAR========================================== */
 
 .hamburger_line_1 {
@@ -448,11 +468,39 @@ p {
 }
 
 /* slider */
-.slick-track {
-    width: 100% !important;
-    display: flex !important;
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0 !important;
 }
 
-.slick-slide {
-    width: unset !important;
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: var(--grey);
+    width: 17px;
+    height: 7px;
+    border-radius: 23px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--white);
+    width: 51px !important;
+    height: 7px !important;
+    border-radius: 23px !important;
+}
+
+.tokenomics_spacing {
+    padding-top: 178px;
+}
+
+.view_button {
+    background: linear-gradient(93.3deg, #1643C3 10.24%, #369EFE 208.68%);
+    border: none;
+    color: white;
+}
+
+.tecnomics_1st_spacing {
+    padding-left: 150px;
 }
